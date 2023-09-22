@@ -520,6 +520,37 @@ foreach(var file in listPath.Visit(root) as List<string>)
 
 foreach (var file in listPath.Visit(folder1) as List<string>)
     Console.WriteLine(file);
+```
+
+# SOLID
+
+The SOLID principles are a set of five design principles in object-oriented programming and software development that promote maintainability, extensibility, and readability of code. These principles were introduced by Robert C. Martin and have become fundamental guidelines for writing high-quality, maintainable software. The SOLID acronym represents the following principles:
+
+* Single Responsibility Principle (SRP):
+
+This principle states that a class should have only one reason to change, meaning it should have only one responsibility or job. It promotes the idea that a class should be focused on doing one thing well.
+Following SRP makes code more maintainable because changes to one responsibility won't affect other unrelated parts of the code.
+
+* Open/Closed Principle (OCP):
+
+The Open/Closed Principle states that software entities (classes, modules, functions) should be open for extension but closed for modification. In other words, you should be able to add new functionality to a system without changing existing code.
+OCP encourages the use of abstraction and polymorphism to allow for the addition of new features or behavior without altering existing code.
+
+* Liskov Substitution Principle (LSP):
+
+This principle is named after Barbara Liskov and emphasizes that objects of a derived class should be able to replace objects of the base class without affecting the correctness of the program.
+Adhering to LSP ensures that inheritance hierarchies are well-defined and that derived classes truly extend the behavior of the base class.
+
+* Interface Segregation Principle (ISP):
+
+ISP suggests that clients should not be forced to depend on interfaces they do not use. It promotes the idea of having small, specific interfaces rather than large, monolithic ones.
+By adhering to ISP, you can avoid situations where classes are forced to implement methods they don't need, leading to cleaner, more focused interfaces.
+
+* Dependency Inversion Principle (DIP):
+
+The Dependency Inversion Principle states that high-level modules should not depend on low-level modules. Both should depend on abstractions. Additionally, abstractions should not depend on details; details should depend on abstractions.
+DIP encourages the use of dependency injection, inversion of control containers, and the use of interfaces to decouple high-level and low-level modules, making the codebase more flexible and testable.
+Adhering to the SOLID principles can lead to more maintainable, flexible, and extensible code. These principles help prevent common issues such as tightly coupled code, code fragility when making changes, and difficulty in testing and reusing code. By following SOLID, developers aim to create software that is easier to understand, modify, and maintain over time.
 
 Console.WriteLine(sizeCalculator.Visit(root));
 Console.WriteLine(sizeCalculator.Visit(folder1));
