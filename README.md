@@ -246,9 +246,9 @@ image2.Display();
 
 ### Composite
 
-Intent: The composite pattern lets you compose objects into tree structures to represent part-whole hierarchies. It allows clients to treat individual objects and compositions of objects uniformly.
-Usage: When you want to represent objects in a hierarchical structure, and you need to work with both individual objects and compositions of objects in a consistent manner.
-Example: Representing a graphical user interface where both simple elements like buttons and complex elements like windows are treated uniformly.
+* Intent: The composite pattern lets you compose objects into tree structures to represent part-whole hierarchies. It allows clients to treat individual objects and compositions of objects uniformly.
+* Usage: When you want to represent objects in a hierarchical structure, and you need to work with both individual objects and compositions of objects in a consistent manner.
+* Example: Representing a graphical user interface where both simple elements like buttons and complex elements like windows are treated uniformly.
 
 ![Composite](https://github.com/RodrigoPAml/DesignPatterns/assets/41243039/a519b8fd-0bf6-44c4-9ce2-a50a802c0e3f)
 
