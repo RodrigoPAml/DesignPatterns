@@ -554,6 +554,7 @@ By adhering to ISP, you can avoid situations where classes are forced to impleme
 
 The Dependency Inversion Principle states that high-level modules should not depend on low-level modules. Both should depend on abstractions. Additionally, abstractions should not depend on details; details should depend on abstractions.
 DIP encourages the use of dependency injection, inversion of control containers, and the use of interfaces to decouple high-level and low-level modules, making the codebase more flexible and testable.
+
 Adhering to the SOLID principles can lead to more maintainable, flexible, and extensible code. These principles help prevent common issues such as tightly coupled code, code fragility when making changes, and difficulty in testing and reusing code. By following SOLID, developers aim to create software that is easier to understand, modify, and maintain over time.
 
 
