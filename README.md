@@ -512,8 +512,8 @@ root.Childrens.Add(folder1);
 folder1.Childrens.Add(fileCsv);
 
 // Visitors
-ListPath listPath = new ListPath();
-TotalSizeCalculator sizeCalculator = new TotalSizeCalculator();
+IVisitor listPath = new ListPath();
+IVisitor sizeCalculator = new TotalSizeCalculator();
 
 foreach(var file in listPath.Visit(root) as List<string>)
     Console.WriteLine(file);
