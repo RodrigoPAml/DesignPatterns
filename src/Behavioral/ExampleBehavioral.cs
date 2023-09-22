@@ -19,12 +19,13 @@ using DesignPatterns.Behavioral.ChainsOfResponsability.Request;
 using DesignPatterns.Behavioral.Mediator.Interface;
 using DesignPatterns.Behavioral.Mediator.Mediator;
 using DesignPatterns.Behavioral.Mediator.Entities;
+using DesignPatterns.Behavioral.Visitor.Interfaces;
 
 namespace DesignPatterns.Behavioral
 {
     public static class ExampleBehavioral
     {
-        public static void Method()
+        public static void TemplateMethodMethod()
         {
             Recipe coffeeRecipe = new CoffeeRecipe();
             Recipe teaRecipe = new TeaRecipe();
@@ -119,8 +120,8 @@ namespace DesignPatterns.Behavioral
             folder1.Childrens.Add(fileCsv);
 
             // Visitors
-            ListPath listPath = new ListPath();
-            TotalSizeCalculator sizeCalculator = new TotalSizeCalculator();
+            IVisitor listPath = new ListPath();
+            IVisitor sizeCalculator = new TotalSizeCalculator();
 
             foreach(var file in listPath.Visit(root) as List<string>)
                 Console.WriteLine(file);
@@ -172,7 +173,7 @@ namespace DesignPatterns.Behavioral
             }
         }
 
-        public static void Meaditor()
+        public static void Mediator()
         {
             // Create an air traffic control tower
             IAirTrafficControlTower tower = new AirTrafficControlTower();

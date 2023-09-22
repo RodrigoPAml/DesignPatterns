@@ -4,14 +4,14 @@
     <Position X="3.5" Y="1.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEAAAAAAAAAAAAAAAABAAAAAAAwAAAAAAAAAA=</HashCode>
-      <FileName>Creation\Singleton\Engine.cs</FileName>
+      <FileName>src\Creation\Singleton\Engine.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPatterns.Creation.Singleton.Utils">
     <Position X="6" Y="1.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Creation\Singleton\Utils.cs</FileName>
+      <FileName>src\Creation\Singleton\Utils.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

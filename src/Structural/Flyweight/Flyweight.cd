@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DesignPatterns.Structural.Flyweight.Intrinsic.SharedAirplane">
+    <Position X="2.25" Y="1" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Flyweight\Intrinsic\SharedAirplane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Structural.Flyweight.Extrinsic.AirPlane">
+    <Position X="6" Y="1" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhYAA=</HashCode>
+      <FileName>Structural\Flyweight\Extrinsic\AirPlane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Structural.Flyweight.Factory.AirplaneFactory">
+    <Position X="3.25" Y="4" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Flyweight\Factory\AirplaneFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

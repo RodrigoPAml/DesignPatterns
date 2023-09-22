@@ -8,15 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="src\Creation\ExamplesCreationcs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="src\Creation\ExamplesCreationcs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="src\Structutal\Proxy\NovaPasta\" />
+    <Folder Include="src\Structural\Proxy\NovaPasta\" />
   </ItemGroup>
 
 </Project>

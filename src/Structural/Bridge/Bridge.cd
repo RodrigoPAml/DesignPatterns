@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DesignPatterns.Structural.Bridge.Implementation.LinuxGuiRenderer">
+    <Position X="1.25" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Structural\Bridge\Implementation\LinuxGuiRenderer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Structural.Bridge.Implementation.WindowsGuiRenderer">
+    <Position X="4.25" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Structural\Bridge\Implementation\WindowsGuiRenderer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Structural.Bridge.Abstraction.GuiElement">
+    <Position X="9" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAgAA=</HashCode>
+      <FileName>src\Structural\Bridge\Abstraction\GuiElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Structural.Bridge.Abstraction.Button">
+    <Position X="7.25" Y="2.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAAAAAAAAA=</HashCode>
+      <FileName>src\Structural\Bridge\Abstraction\Button.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Structural.Bridge.Abstraction.TextBox">
+    <Position X="10.5" Y="2.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAAAAAAAAA=</HashCode>
+      <FileName>src\Structural\Bridge\Abstraction\TextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DesignPatterns.Structural.Bridge.Implementation.IGuiRenderer">
+    <Position X="2.75" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Structural\Bridge\Implementation\IGuiRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
