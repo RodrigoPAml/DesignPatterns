@@ -520,6 +520,10 @@ foreach(var file in listPath.Visit(root) as List<string>)
 
 foreach (var file in listPath.Visit(folder1) as List<string>)
     Console.WriteLine(file);
+
+Console.WriteLine(sizeCalculator.Visit(root));
+Console.WriteLine(sizeCalculator.Visit(folder1));
+Console.WriteLine(sizeCalculator.Visit(fileCsv));
 ```
 
 # SOLID
@@ -552,7 +556,4 @@ The Dependency Inversion Principle states that high-level modules should not dep
 DIP encourages the use of dependency injection, inversion of control containers, and the use of interfaces to decouple high-level and low-level modules, making the codebase more flexible and testable.
 Adhering to the SOLID principles can lead to more maintainable, flexible, and extensible code. These principles help prevent common issues such as tightly coupled code, code fragility when making changes, and difficulty in testing and reusing code. By following SOLID, developers aim to create software that is easier to understand, modify, and maintain over time.
 
-Console.WriteLine(sizeCalculator.Visit(root));
-Console.WriteLine(sizeCalculator.Visit(folder1));
-Console.WriteLine(sizeCalculator.Visit(fileCsv));
-```
+
