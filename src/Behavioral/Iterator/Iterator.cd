@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DesignPatterns.Behavioral.Iterator.Entities.TreeNode&lt;T&gt;">
+    <Position X="3.5" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACgAAAAAAA=</HashCode>
+      <FileName>Behavioral\Iterator\Entities\TreeNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Behavioral.Iterator.Entities.DepthTreeIterator&lt;T&gt;">
+    <Position X="6.5" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAQAAAAAAAAAAAAAAAQAAIAQAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Iterator\Entities\DepthTreeIterator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Behavioral.Iterator.Entities.BreadthTreeIterator&lt;T&gt;">
+    <Position X="9.5" Y="2.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAQAAAAAAAAAAAAAAAQAAIAQAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Iterator\Entities\BreadthTreeIterator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="DesignPatterns.Behavioral.Iterator.Interface.IIterator">
+    <Position X="8.5" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Iterator\Interface\IIterator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DesignPatterns.Creation.Builder.QueryBuilder">
+    <Position X="6.5" Y="1.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAAAIQAAAAAA=</HashCode>
+      <FileName>Creation\Builder\QueryBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Creation.Builder.Builders.PostgresQueryBuilder">
+    <Position X="4" Y="4" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Creation\Builder\Builders\PostgresQueryBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Creation.Builder.Builders.MariaDBQueryBuilder">
+    <Position X="8.5" Y="4" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Creation\Builder\Builders\MariaDBQueryBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

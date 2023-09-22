@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DesignPatterns.Creation.AbstractFactory.Entities.Concrete.AmericanInvoiceCancelation">
+    <Position X="3.75" Y="2.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creation\AbstractFactory\Entities\Concrete\AmericanInvoiceCancelation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.179" />
+  </Class>
+  <Class Name="DesignPatterns.Creation.AbstractFactory.Entities.Concrete.AmericanInvoiceSender">
+    <Position X="14.25" Y="2.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Creation\AbstractFactory\Entities\Concrete\AmericanInvoiceSender.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Creation.AbstractFactory.Entities.Concrete.BrazilianInvoiceCancelation">
+    <Position X="7.25" Y="2.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creation\AbstractFactory\Entities\Concrete\BrazilianInvoiceCancelation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Creation.AbstractFactory.Entities.Concrete.BrazilianInvoiceSender">
+    <Position X="11" Y="2.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Creation\AbstractFactory\Entities\Concrete\BrazilianInvoiceSender.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Creation.AbstractFactory.Factory.Factories.AmericanInvoiceIntegrationFactory">
+    <Position X="7.5" Y="5.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creation\AbstractFactory\Factory\Factories\AmericanInvoiceIntegrationFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Creation.AbstractFactory.Factory.Factories.BrazilianInvoiceIntegrationFactory">
+    <Position X="11.25" Y="5.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creation\AbstractFactory\Factory\Factories\BrazilianInvoiceIntegrationFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Creation.AbstractFactory.InvoiceIntegration">
+    <Position X="8.75" Y="7.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creation\AbstractFactory\InvoiceIntegration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DesignPatterns.Creation.AbstractFactory.Entities.Abstract.IInvoiceCancelation">
+    <Position X="5.5" Y="0.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creation\AbstractFactory\Entities\Abstract\IInvoiceCancelation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DesignPatterns.Creation.AbstractFactory.Entities.Abstract.IInvoiceSender">
+    <Position X="12.5" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Creation\AbstractFactory\Entities\Abstract\IInvoiceSender.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DesignPatterns.Creation.AbstractFactory.Factory.Interfaces.IInvoiceIntegrationFactory">
+    <Position X="9.5" Y="4" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creation\AbstractFactory\Factory\Interfaces\IInvoiceIntegrationFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
