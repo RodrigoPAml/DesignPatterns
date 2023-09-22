@@ -288,3 +288,240 @@ Console.WriteLine($"Total area to draw of rects {totalRects}");
 ```
 
 ## Behavioral
+
+Behavioral design patterns in C# focus on how objects and classes interact and communicate with each other. They define patterns of communication between objects, making the system more flexible and easier to maintain
+
+### Chains of Reponsability
+
+* Intent: The chain of responsibility pattern passes a request along a chain of handlers. Each handler decides either to process the request or pass it to the next handler in the chain.
+* Usage: When you want to decouple senders and receivers of a request and allow multiple objects to handle the request without the sender needing to know which object will process it.
+* Example: Implementing request handling in a web framework where middleware components can process, modify, or pass along HTTP requests.
+
+![ChainsOfReponsability](https://github.com/RodrigoPAml/DesignPatterns/assets/41243039/56206dad-7143-4ea2-8cdd-fd1a4659c034)
+
+Example
+```C#
+Handler handler1 = new ValidateName();
+Handler handler2 = new ValidateValue();
+
+handler1.SetSuccessor(handler2);
+
+InvoiceNoteRequest request = new InvoiceNoteRequest("note1", 10); // put -10 to trigger an error
+
+try
+{
+    handler1.HandleRequest(request);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+```
+
+### Iterator
+
+* Intent: The iterator pattern provides a way to access elements of an aggregate object sequentially without exposing its underlying representation.
+* Usage: When you want to provide a consistent way to traverse different data structures (e.g., lists, trees) without exposing their internal details.
+* Example: Creating an iterator to loop through elements in a collection, such as an array or a linked list, without exposing the collection's internal structure.
+
+![Iterator](https://github.com/RodrigoPAml/DesignPatterns/assets/41243039/e3e431b5-a4e4-4a95-bdd5-be1ba8aa4228)
+
+Example
+```C#
+// Create a simple binary tree
+var root = new TreeNode<int>(1);
+root.Left = new TreeNode<int>(2);
+root.Right = new TreeNode<int>(3);
+root.Left.Left = new TreeNode<int>(4);
+root.Left.Right = new TreeNode<int>(5);
+root.Right.Left = new TreeNode<int>(6);
+root.Right.Right = new TreeNode<int>(7);
+
+// Create some iterators for the tree
+var iterator1 = new DepthTreeIterator<int>(root);
+var iterator2 = new BreadthTreeIterator<int>(root);
+
+while (iterator1.HasNext())
+{
+    var node = iterator1.GetNext();
+    Console.WriteLine(node);
+}
+
+Console.WriteLine();
+
+while (iterator2.HasNext())
+{
+    var node = iterator2.GetNext();
+    Console.WriteLine(node);
+}
+```
+
+### Mediator
+
+* Intent: The mediator pattern defines an object that encapsulates how objects interact with each other. It promotes loose coupling by keeping objects from referring to each other explicitly.
+* Usage: When you have a complex system with many interactions between objects, and you want to centralize the communication to reduce dependencies and make the system more maintainable.
+* Example: Building a chat application where a mediator handles message distribution between multiple users without direct user-to-user communication.
+
+![Mediator](https://github.com/RodrigoPAml/DesignPatterns/assets/41243039/abcd1fc2-8dd5-4951-99f5-ceb7137ade06)
+
+Example
+```C#
+// Create an air traffic control tower
+IAirTrafficControlTower tower = new AirTrafficControlTower();
+
+// Create passenger aircraft and register with the tower
+var aircraft1 = new Boeing737("Flight 123", tower);
+var aircraft2 = new Cesnna172("Flight 456", tower);
+
+// Aircraft communicate through the tower
+aircraft1.Send("Requesting permission to land.");
+aircraft2.Send("Acknowledged, Flight 123. You are clear to land.");
+```
+
+### Memento
+
+* Intent: The memento pattern captures and externalizes an object's internal state so that it can be restored to that state later. It is often used for undo/redo functionality.
+* Usage: When you need to capture an object's state at a specific point in time and later restore it to that state without exposing its internal structure.
+* Example: Implementing undo functionality in a text editor, where you can save the editor's state as a memento and later restore it.
+
+![Memento](https://github.com/RodrigoPAml/DesignPatterns/assets/41243039/6097bbb0-17ff-4259-839b-9c37f447e633)
+
+Example
+```C#
+TextEditor textEditor = new TextEditor();
+History history = new History(textEditor);
+
+textEditor.Write("Hi, ");
+history.Backup();
+
+textEditor.Write("my name is Rodrigo!");
+history.Backup();
+
+textEditor.Write("I hahad 338 ne3");
+history.Backup();
+
+history.Undo();
+history.Undo();
+
+Console.WriteLine(textEditor.GetContent());
+```
+
+### Observer
+
+* Intent: The observer pattern defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+* Usage: When you want to establish a relationship where one object (the subject) maintains a list of observers that are notified of state changes without coupling the subject to specific observer classes.
+* Example: Implementing event handling in a user interface, where UI elements (observers) respond to changes in data (the subject).
+
+![Observer](https://github.com/RodrigoPAml/DesignPatterns/assets/41243039/ae01de1f-c84b-480f-9a18-e0b6bae8ed26)
+
+Example
+```C#
+ IObservableStore store = new ComputerStore();
+
+IStoreObserver client1 = new Client();
+IStoreObserver client2 = new Client();
+
+store.RegisterObserver(client1);
+store.RegisterObserver(client2);
+
+// Client got notified
+store.AddProduct("Iphone 15");
+```
+
+### State
+
+* Intent: The state pattern allows an object to alter its behavior when its internal state changes. It encapsulates state-specific logic in separate classes.
+* Usage: When an object's behavior needs to change dynamically based on its state, and you want to avoid using conditional statements to manage state transitions.
+* Example: Implementing a vending machine, where the machine's behavior (e.g., dispensing items or returning change) depends on its current state (e.g., in-use, out-of-stock).
+
+![State](https://github.com/RodrigoPAml/DesignPatterns/assets/41243039/1c73a44e-e667-4490-9a0e-4e87538897ae)
+
+Example
+```C#
+AudioPlayer player = new AudioPlayer();
+
+player.Play(); // Starts playing
+player.Pause(); // Pauses
+player.Pause(); // Already paused
+player.Stop(); // Stops
+
+player.Pause(); // Cannot pause. Audio is stopped
+player.Play(); // Starts playing
+player.Stop(); // Stops
+```
+
+### Strategy
+
+* Intent: The strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. It allows clients to choose the appropriate algorithm at runtime.
+* Usage: When you have multiple algorithms that can be used interchangeably, and you want to decouple the algorithm's implementation from the client code.
+* Example: Implementing different sorting algorithms (e.g., bubble sort, quicksort) where the choice of algorithm can be made at runtime.
+
+![Strategy](https://github.com/RodrigoPAml/DesignPatterns/assets/41243039/a67078e2-2304-46d1-8361-7637d2c9a063)
+
+Example
+```C#
+var intList = new List<int> { 5, 1, 4, 2, 8 };
+var stringList = new List<string> { "banana", "apple", "grape", "cherry" };
+
+var bubbleSorter = new Sorter<int>(new BubbleSortStrategy<int>());
+bubbleSorter.SortList(intList);
+
+var quickSorter = new Sorter<string>(new QuickSortStrategy<string>());
+quickSorter.SortList(stringList);
+```
+
+### Template Method
+
+* Intent: The template method pattern defines the skeleton of an algorithm in a method, but lets subclasses override specific steps of the algorithm without changing its structure.
+* Usage: When you want to define a common algorithm structure but allow variations in the implementation of specific steps.
+* Example: Creating a document generation framework where the structure of document generation is predefined, but subclasses can provide custom content for different document types.
+
+![TemplateMethod](https://github.com/RodrigoPAml/DesignPatterns/assets/41243039/76824ea0-f66d-4ba0-b41e-30d9ea610f45)
+
+Example
+```C#
+Recipe coffeeRecipe = new CoffeeRecipe();
+Recipe teaRecipe = new TeaRecipe();
+
+Console.WriteLine("Making coffee:");
+coffeeRecipe.PrepareRecipe();
+
+Console.WriteLine("Making tea:");
+teaRecipe.PrepareRecipe();
+```
+
+### Visitor
+
+* Intent: The visitor pattern represents an operation to be performed on elements of an object structure. It lets you define a new operation without changing the classes of the elements on which it operates.
+* Usage: When you have a complex object structure with multiple types of elements, and you want to add new operations to these elements without modifying their classes.
+* Example: Implementing a document processing system where you want to perform different operations (e.g., printing, exporting) on various elements (e.g., paragraphs, images) within documents.
+
+![Visitor](https://github.com/RodrigoPAml/DesignPatterns/assets/41243039/c36a1dcb-12bf-49f7-ae1d-dd05d101efb4)
+
+Example
+```C#
+// Entities
+Folder root = new Folder("root");
+Folder folder1 = new Folder("folder1");
+
+File fileTxt = new File("teste.txt", 10);
+File fileCsv = new File("teste.csv", 20);
+
+root.Childrens.Add(fileTxt);
+root.Childrens.Add(folder1);
+folder1.Childrens.Add(fileCsv);
+
+// Visitors
+ListPath listPath = new ListPath();
+TotalSizeCalculator sizeCalculator = new TotalSizeCalculator();
+
+foreach(var file in listPath.Visit(root) as List<string>)
+    Console.WriteLine(file);
+
+foreach (var file in listPath.Visit(folder1) as List<string>)
+    Console.WriteLine(file);
+
+Console.WriteLine(sizeCalculator.Visit(root));
+Console.WriteLine(sizeCalculator.Visit(folder1));
+Console.WriteLine(sizeCalculator.Visit(fileCsv));
+```
