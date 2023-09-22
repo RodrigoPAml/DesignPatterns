@@ -1,5 +1,6 @@
 # DesignPatterns
 Design patterns implemented in C#
+At the end there is about SOLID priciples
 
 ## Creational 
 Creational design patterns in C# are a set of design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable for the situation. 
