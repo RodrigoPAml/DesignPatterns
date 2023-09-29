@@ -583,7 +583,7 @@ Clean Architecture is a generic approach and can be applied to various programmi
 
 Inversion of Control (IoC) is a design principle in which a software component is designed to receive its dependencies from an external source, rather than creating them itself. This is in contrast to traditional software design, where a component is responsible for creating and managing its own dependencies.
 
-We can achieve Inversion of Control through various mechanisms such as: Strategy design pattern, Service Locator pattern, Factory pattern, and Dependency Injection (DI).
+We can achieve Inversion of Control through various mechanisms such as: Strategy design pattern, Template method pattern, Service Locator pattern, Factory pattern, and Dependency Injection (DI).
 
 There are two types of IoC: type 1 (interface-based) and type 2 (template-based).
 
