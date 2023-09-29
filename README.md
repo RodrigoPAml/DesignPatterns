@@ -1,7 +1,7 @@
 # DesignPatterns
 Design patterns implemented in C#
 
-At the end there is about SOLID priciples
+At the end there is about SOLID priciples and Clean Architecture
 
 ## Creational 
 Creational design patterns in C# are a set of design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable for the situation. 
@@ -558,5 +558,26 @@ The Dependency Inversion Principle states that high-level modules should not dep
 DIP encourages the use of dependency injection, inversion of control containers, and the use of interfaces to decouple high-level and low-level modules, making the codebase more flexible and testable.
 
 Adhering to the SOLID principles can lead to more maintainable, flexible, and extensible code. These principles help prevent common issues such as tightly coupled code, code fragility when making changes, and difficulty in testing and reusing code. By following SOLID, developers aim to create software that is easier to understand, modify, and maintain over time.
+
+# Clean Architecture
+
+A Clean Architecture is a software architecture pattern designed to promote separation of concerns and maintain clean and understandable code. It is based on design principles and best practices aimed at creating highly testable, flexible, and sustainable software systems.
+
+The Clean Architecture proposes a well-defined layering structure, with each layer having specific responsibilities and one-way dependencies. The core layers typically include:
+
+- **Presentation Layer** - This layer is responsible for handling user interactions and delivering data to the user interface. In a .NET Core Web API, this layer comprises the controllers and other components that handle HTTP requests and responses.
+
+- **Application Layer** - The application layer contains the business logic and use cases of the application. It acts as an intermediary between the presentation layer and the domain layer. This layer is independent of any specific UI or infrastructure concerns.
+
+- **Domain Layer** - The domain layer represents the application’s core, encapsulating business rules, entities, and domain-specific logic. It should be technology-agnostic and contain no dependencies on external frameworks or libraries.
+
+- **Infrastructure Layer** - The infrastructure layer deals with external concerns such as databases, external services, and frameworks. It contains implementations of interfaces defined in the application layer and interacts with external resources.
+
+One of the key goals of Clean Architecture is to maintain one-way dependencies, meaning that inner layers should not be aware of implementation details of outer layers. This facilitates testability, maintenance, and code evolution, as changes in an outer layer do not affect the inner layers.
+
+Clean Architecture is a generic approach and can be applied to various programming languages and project types. It encourages writing clean, testable, and high-quality code, which is essential for long-lasting software projects that need to be easily adaptable to changing requirements.
+
+
+
 
 
