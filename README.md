@@ -563,6 +563,8 @@ Adhering to the SOLID principles can lead to more maintainable, flexible, and ex
 
 A Clean Architecture is a software architecture pattern designed to promote separation of concerns and maintain clean and understandable code. It is based on design principles and best practices aimed at creating highly testable, flexible, and sustainable software systems.
 
+![image](https://github.com/RodrigoPAml/DesignPatterns/assets/41243039/192308ce-b836-4fd4-b312-2fbf8f7314c1)
+
 The Clean Architecture proposes a well-defined layering structure, with each layer having specific responsibilities and one-way dependencies. The core layers typically include:
 
 - **Presentation Layer** - This layer is responsible for handling user interactions and delivering data to the user interface. In a .NET Core Web API, this layer comprises the controllers and other components that handle HTTP requests and responses.
@@ -577,7 +579,44 @@ One of the key goals of Clean Architecture is to maintain one-way dependencies, 
 
 Clean Architecture is a generic approach and can be applied to various programming languages and project types. It encourages writing clean, testable, and high-quality code, which is essential for long-lasting software projects that need to be easily adaptable to changing requirements.
 
+# IoC (Inversion of Control)
 
+Inversion of Control (IoC) is a design principle in which a software component is designed to receive its dependencies from an external source, rather than creating them itself. This is in contrast to traditional software design, where a component is responsible for creating and managing its own dependencies.
 
+We can achieve Inversion of Control through various mechanisms such as: Strategy design pattern, Service Locator pattern, Factory pattern, and Dependency Injection (DI).
 
+There are two types of IoC: type 1 (interface-based) and type 2 (template-based).
+
+* Type 1, also known as "Hollywood Principle" states "Don't call us, we'll call you" meaning, the system will call the dependent objects when it needs them, rather than the dependent objects calling the system when they need something.
+* Type 2, also called "template method" pattern, defines the skeleton of an algorithm in a base class, and allows derived classes to fill in specific details.
+
+## Key Concepts
+
+Here are some key concepts related to IoC:
+
+1. **Dependency Injection (DI)**: One of the most common ways to implement IoC is through Dependency Injection. DI is a technique where the dependencies (e.g., objects, services, or configurations) that a class needs are provided to it from the outside (usually by a framework or container) rather than the class creating them itself. This reduces tight coupling between classes and makes the code more testable and maintainable.
+
+2. **IoC Containers**: IoC containers are frameworks or libraries that manage the creation and lifecycle of objects (dependencies) in an application. Popular IoC containers include Spring (for Java), Unity (for C#), and Dagger (for Android). These containers allow you to configure how dependencies are injected into your classes.
+
+3. **Service Providers**: In some cases, IoC can be implemented through service providers, which are responsible for locating and providing the necessary services or components to other parts of the application.
+
+4. **Event-driven and Message-driven Architectures**: In IoC, control flow can also be inverted by using event-driven or message-driven architectures, where components or objects respond to events or messages rather than explicitly calling each other's methods.
+
+5. **Loose Coupling**: IoC promotes loose coupling between components, which means that changes in one part of the system should have minimal impact on other parts. This makes the codebase more flexible and easier to maintain.
+
+## Benefits of IoC
+
+IoC is a powerful concept in software development because it helps improve code organization, maintainability, and scalability. It is commonly used in the development of enterprise-level applications, web applications, and frameworks where modularization and decoupling are essential for managing complexity and promoting code reusability.
+
+## Implementing IoC 
+
+![image](https://github.com/RodrigoPAml/DesignPatterns/assets/41243039/80e05430-704b-4521-a13f-84290cafdb6c)
+
+Suppose your class depends on a logger service, where there is a text logger and csv logger. Instead of instantiating the two specific concrete classes
+and make us depend on them, we can externalize this dependency using the factory pattern.
+
+- We create a factory to get any logger (csv or text) and using DIP we create an abstract class that will be implemented by the loggers and returned by the factory class
+- We implemented dependency injection to receive the factory class into our class
+- We use the factory class to instantiate any type of logger, depending only on its abstract class (DIP)
+- Now the code is decoupled and extensible
 
