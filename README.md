@@ -709,5 +709,6 @@ Disadvantages
 # Sources
 
 https://www.linkedin.com/pulse/tdd-vs-bdd-ddd-vitalii-serdiuk/
+
 https://medium.com/@edin.sahbaz/getting-started-with-clean-architecture-in-net-core-fa9151bc5918
 
