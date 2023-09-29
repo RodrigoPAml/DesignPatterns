@@ -701,7 +701,13 @@ Advantages
 * Modularization: DDD enables the creation of independent and modular software components, making the code more maintainable and easier to test.
 
 Disadvantages
+
 * Complexity: Implementing DDD can be challenging, particularly for inexperienced developers, due to the level of complexity involved.
 * Time-Consuming: DDD is a time-consuming approach that requires developers to spend more time on the design and development phases.
 * Cost-Intensive: DDD is a resource-intensive approach that can be costly for small to medium-sized enterprises.
+
+# Sources
+
+https://www.linkedin.com/pulse/tdd-vs-bdd-ddd-vitalii-serdiuk/
+https://medium.com/@edin.sahbaz/getting-started-with-clean-architecture-in-net-core-fa9151bc5918
 
