@@ -602,7 +602,9 @@ Here are some key concepts related to IoC:
 
 4. **Event-driven and Message-driven Architectures**: In IoC, control flow can also be inverted by using event-driven or message-driven architectures, where components or objects respond to events or messages rather than explicitly calling each other's methods.
 
-5. **Loose Coupling**: IoC promotes loose coupling between components, which means that changes in one part of the system should have minimal impact on other parts. This makes the codebase more flexible and easier to maintain.
+5. **Setter Injection**: IoC dependencies can be also injected into a class using setter methods. Setter injection allows for optional dependencies, as you can set them after the object has been created.
+
+6. **Loose Coupling**: IoC promotes loose coupling between components, which means that changes in one part of the system should have minimal impact on other parts. This makes the codebase more flexible and easier to maintain.
 
 ## Benefits of IoC
 
