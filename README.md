@@ -572,6 +572,10 @@ Adhering to the SOLID principles can lead to more maintainable, flexible, and ex
 
 A Clean Architecture is a software architecture pattern designed to promote separation of concerns and maintain clean and understandable code. It is based on design principles and best practices aimed at creating highly testable, flexible, and sustainable software systems.
 
+One of the key goals of Clean Architecture is to maintain one-way dependencies, meaning that inner layers should not be aware of implementation details of outer layers. This facilitates testability, maintenance, and code evolution, as changes in an outer layer do not affect the inner layers.
+
+Clean Architecture is a generic approach and can be applied to various programming languages and project types. It encourages writing clean, testable, and high-quality code, which is essential for long-lasting software projects that need to be easily adaptable to changing requirements.
+
 ![image](https://github.com/RodrigoPAml/DesignPatterns/assets/41243039/192308ce-b836-4fd4-b312-2fbf8f7314c1)
 
 The Clean Architecture proposes a well-defined layering structure, with each layer having specific responsibilities and one-way dependencies. The core layers typically include:
@@ -583,10 +587,6 @@ The Clean Architecture proposes a well-defined layering structure, with each lay
 - **Domain Layer** - The domain layer represents the application’s core, encapsulating business rules, entities, and domain-specific logic. It should be technology-agnostic and contain no dependencies on external frameworks or libraries.
 
 - **Infrastructure Layer** - The infrastructure layer deals with external concerns such as databases, external services, and frameworks. It contains implementations of interfaces defined in the application layer and interacts with external resources.
-
-One of the key goals of Clean Architecture is to maintain one-way dependencies, meaning that inner layers should not be aware of implementation details of outer layers. This facilitates testability, maintenance, and code evolution, as changes in an outer layer do not affect the inner layers.
-
-Clean Architecture is a generic approach and can be applied to various programming languages and project types. It encourages writing clean, testable, and high-quality code, which is essential for long-lasting software projects that need to be easily adaptable to changing requirements.
 
 # IoC (Inversion of Control)
 
