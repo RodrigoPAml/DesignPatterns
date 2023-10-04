@@ -683,9 +683,9 @@ Disadvantages
 * Reliance on collaboration can slow down the development process if team members have different schedules, workloads, or understandings of the requirements. Additionally, some stakeholders may have difficulty articulating their needs or requirements clearly, which can result in misunderstandings or incorrect assumptions.
 * Implementing it can be challenging and require significant upfront effort to establish a shared understanding of requirements.
 
-## Domain-Driven-Development (DDD)
+## Domain-Driven-Design (DDD)
 
-Domain-Driven-Development (DDD) is a software engineering methodology that builds software around the domain model. A domain model represents a business or organization’s key concepts and processes and how they relate. DDD divides complex domains into smaller, more manageable domains that can be easily understood and modeled. In DDD methodology, software developers work closely with domain experts to identify domain models, entity relationships, and business functionalities.
+Domain-Driven-Design (DDD) is a software engineering methodology that builds software around the domain model. A domain model represents a business or organization’s key concepts and processes and how they relate. DDD divides complex domains into smaller, more manageable domains that can be easily understood and modeled. In DDD methodology, software developers work closely with domain experts to identify domain models, entity relationships, and business functionalities.
 
 DDD methodology comprises four phases: discovery, modeling, implementation, and refinement.
 
