@@ -228,11 +228,11 @@ Example
 ```C#
 AirplaneFactory airplaneFactory = new AirplaneFactory();
 
-// Plane 1 and Plane2 will share the same intrisic state
+// Plane 1 and Plane2 will share the same state 
 var plane1 = airplaneFactory.CreateAirPlane(100, 200, 10, "airplane1.jpg", "red");
 var plane2 = airplaneFactory.CreateAirPlane(250, 100, 5, "airplane1.jpg", "red");
 
-// New instricit state here
+// New state here
 var plane3 = airplaneFactory.CreateAirPlane(250, 100, 5, "airplane2.jpg", "blue");
 ```
 
