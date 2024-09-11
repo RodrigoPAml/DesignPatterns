@@ -26,7 +26,7 @@ They abstract the instantiation process, making it more flexible, efficient, and
 
 Example
 ```C#
-// Singleton with unique instance and alloced on demand (lazy)
+// Singleton with unique instance and allocated on demand (lazy)
 var engine = Engine.GetInstance();
 engine.Play();
 
