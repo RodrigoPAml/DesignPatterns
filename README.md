@@ -1,6 +1,8 @@
 # Design Patterns
 
-Repository for studies of design patterns implemented by myself in C#
+Repository for studies of design patterns implemented by myself in C#.
+
+Design patterns in programming are general, reusable solutions to common problems that arise in software design.
 
 ## Creational 
 Creational design patterns in C# are a set of design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable for the situation. 
